@@ -55,7 +55,7 @@ class Toolbar extends React.Component {
   }
 
   viewNamesGroup(messages) {
-    let viewNames = this.props.views
+    let viewNames = this.props.views.filter(name => name !== 'agenda')
     const view = this.props.view
 
     if (viewNames.length > 1) {
